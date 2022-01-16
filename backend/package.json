@@ -4,6 +4,7 @@
   "description": "A simple code challenge",
   "main": "index.js",
   "scripts": {
+    "babel-version": "babel --version",
     "build": "rm -rf ./src/dist && babel ./src/. --out-dir ./src/dist --copy-files",
     "start": "npm run build && node ./src/dist/index.js",
     "dev": "nodemon --exec babel-node src/index.js",
@@ -14,6 +15,8 @@
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "dotenv": "^12.0.4",
     "express": "^4.17.2",
     "nodemon": "^2.0.15"
   },
